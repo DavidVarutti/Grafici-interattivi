@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ripartizione Macronutrienti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            margin: 20px;
+        }
+        iframe {
+            width: 80%;
+            height: 600px; /* Aumentato l'altezza per un grafico più grande */
+            border: none;
+            max-width: 900px; /* Limite massimo di larghezza */
+            margin: 0 auto;
+        }
+        .intestazione {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Ripartizione dei Macronutrienti nel Piano Alimentare
+    </header>
+    <div class="container">
+        <p class="intestazione">
+            Questo grafico mostra la distribuzione dei macronutrienti basata sul piano nutrizionale.
+        </p>
+        <!-- Incorporazione del grafico -->
+        <iframe
+            src="Grafico_Ripartizione_Macronutrienti.html"
+            frameborder="0"
+            scrolling="no"
+            onload="this.contentWindow.document.querySelectorAll('.modebar-container').forEach(el => el.remove());">
+        </iframe>
+    </div>
+</body>
+</html>
